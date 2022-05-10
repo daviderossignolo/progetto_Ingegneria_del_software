@@ -1,5 +1,5 @@
 # Progetto Ingegneria del software
-Progetto del secondo anno @ UNIvr
+<h3>Progetto del secondo anno @ UNIvr
 <hr>
-### Dudine Pietro
-### Rossignolo Davide
+<h3> Dudine Pietro 
+<h3> Rossignolo Davide
