@@ -8,9 +8,11 @@ public class MainClass {
 	    try  
 	    {  
 	        //create instance of the CreateLoginForm  
-	        LoginPage form = new LoginPage();  
-	        form.setSize(300,100);  //set size of the frame  
+	        LoginPage form = new LoginPage();
+	        form.setSize(265,180);  //set size of the frame  
 	        form.setVisible(true);  //make form visible to the user  
+	        form.setAlwaysOnTop(true);
+	        form.setLocationRelativeTo(null);
 	    }  
 	    catch(Exception e)  
 	    {     
@@ -19,6 +21,3 @@ public class MainClass {
 	    }  
 	} 
 }
-
- 
- 
