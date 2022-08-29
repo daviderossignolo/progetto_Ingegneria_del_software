@@ -1,4 +1,4 @@
-/*MailField.getDocument().addDocumentListener(new DocumentListener() {
+MailField.getDocument().addDocumentListener(new DocumentListener() {
 			   public void changedUpdate(DocumentEvent e) {
 			     //changed();
 			   }
@@ -21,4 +21,4 @@
 					   JOptionPane.showMessageDialog(tmp, "Mail non valida!");
 				   }
 			   }
-		});*/
+		});
