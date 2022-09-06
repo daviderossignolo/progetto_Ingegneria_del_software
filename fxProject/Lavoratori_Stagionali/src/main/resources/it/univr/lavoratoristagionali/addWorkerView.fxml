@@ -1,40 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #A0AECD;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.lavoratoristagionali.AddWorkerView">
+<AnchorPane prefHeight="576.0" prefWidth="934.0" style="-fx-background-color: #fcd029;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.lavoratoristagionali.addWorkerController">
    <children>
-      <Label layoutX="27.0" layoutY="92.0" text="Nome">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <TextField layoutX="91.0" layoutY="92.0" />
-      <Label layoutX="300.0" layoutY="92.0" text="Cognome">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <TextField layoutX="378.0" layoutY="90.0" />
-      <Label layoutX="37.0" layoutY="130.0" text="Età">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <Spinner fx:id="counterAge" editable="true" layoutX="91.0" layoutY="127.0" prefHeight="20.0" prefWidth="149.0" />
-      <DatePicker layoutX="378.0" layoutY="127.0" prefHeight="20.0" prefWidth="149.0" />
-      <Label layoutX="300.0" layoutY="130.0" text="Cognome">
-         <font>
-            <Font name="System Bold" size="14.0" />
-         </font>
-      </Label>
-      <Button layoutX="501.0" layoutY="345.0" mnemonicParsing="false" text="Inserisci" />
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="154.0" layoutY="76.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="207.0" style="-fx-background-color: #44c1c5;">
+               <children>
+                  <ImageView fitHeight="153.0" fitWidth="200.0" layoutX="51.0" layoutY="52.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/D:/Lavoratori_Stagionali/src/main/java/it/univr/lavoratoristagionali/src/main/images/networking.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="logoutBtn" layoutX="102.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#switchBackToLogin" text="Logout">
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="742.0" style="-fx-background-color: #1b4e4f;">
+               <children>
+                  <Pane layoutX="18.0" layoutY="21.0" prefHeight="538.0" prefWidth="623.0" style="-fx-background-color: #eaf4f5;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="18.0">
+                     <children>
+                        <Label layoutX="20.0" layoutY="64.0" prefHeight="20.0" prefWidth="45.0" text="Nome" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="languages" layoutX="382.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField layoutY="14.0" prefHeight="39.0" prefWidth="302.0" style="-fx-background-color: #eaf4f5;" text="Registrazione dati lavoratore">
+                           <font>
+                              <Font name="Gadugi Bold" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="name" layoutX="20.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="201.0" layoutY="64.0" prefHeight="20.0" prefWidth="79.0" text="Cognome" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="surname" layoutX="201.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField fx:id="birthplace" layoutX="383.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" />
+                        <TextField fx:id="address" layoutX="198.0" layoutY="149.0" prefHeight="20.0" prefWidth="160.0" />
+                        <TextField fx:id="phone" layoutX="383.0" layoutY="149.0" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="20.0" layoutY="128.0" text="Data" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="383.0" layoutY="64.0" text="Luogo di nascita">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="198.0" layoutY="128.0" text="Indirizzo di residenza">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="383.0" layoutY="128.0" text="Telefono">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nationality" layoutX="20.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="20.0" layoutY="185.0" text="Nazionalità" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="email" layoutX="198.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" />
+                        <Label layoutX="200.0" layoutY="185.0" text="E-mail" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="383.0" layoutY="185.0" text="Lingue parlate" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="198.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #1b4e4f;">
+                           <children>
+                              <CheckBox fx:id="patenteA" layoutX="140.0" layoutY="43.0" mnemonicParsing="false" text="A">
+                                 <padding>
+                                    <Insets left="5.0" top="2.0" />
+                                 </padding>
+                              </CheckBox>
+                              <CheckBox fx:id="patenteAM" contentDisplay="CENTER" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" text="AM" textAlignment="CENTER" />
+                              <CheckBox fx:id="patenteA1" layoutX="60.0" layoutY="45.0" mnemonicParsing="false" text="A1" />
+                              <TextField layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #eaf4f5;" text="Patenti">
+                                 <font>
+                                    <Font name="Gadugi Bold" size="14.0" />
+                                 </font>
+                              </TextField>
+                              <CheckBox fx:id="patenteA2" layoutX="100.0" layoutY="45.0" mnemonicParsing="false" text="A2" />
+                              <CheckBox fx:id="patenteB1" contentDisplay="CENTER" layoutX="10.0" layoutY="72.0" mnemonicParsing="false" text="B1" textAlignment="CENTER" />
+                              <CheckBox fx:id="patenteB" layoutX="60.0" layoutY="72.0" mnemonicParsing="false" text="B" />
+                              <CheckBox fx:id="patenteC1" layoutX="9.0" layoutY="100.0" mnemonicParsing="false" text="C1" />
+                              <CheckBox fx:id="patenteC" layoutX="55.0" layoutY="98.0" mnemonicParsing="false" text="C">
+                                 <padding>
+                                    <Insets left="5.0" top="2.0" />
+                                 </padding>
+                              </CheckBox>
+                              <CheckBox fx:id="patenteD1" layoutX="9.0" layoutY="126.0" mnemonicParsing="false" text="D1" />
+                              <CheckBox fx:id="patenteD" layoutX="55.0" layoutY="125.0" mnemonicParsing="false" text="D">
+                                 <padding>
+                                    <Insets left="5.0" top="2.0" />
+                                 </padding>
+                              </CheckBox>
+                              <CheckBox fx:id="patenteBE" layoutX="9.0" layoutY="155.0" mnemonicParsing="false" text="BE" />
+                              <CheckBox fx:id="patenteCE" layoutX="60.0" layoutY="155.0" mnemonicParsing="false" text="CE" />
+                              <CheckBox fx:id="patenteDE" layoutX="100.0" layoutY="155.0" mnemonicParsing="false" text="DE" />
+                           </children>
+                        </Pane>
+                        <Separator layoutY="464.0" prefHeight="0.0" prefWidth="633.0" />
+                        <RadioButton layoutX="21.0" layoutY="274.0" mnemonicParsing="false" text="si">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="automunito" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton layoutX="60.0" layoutY="274.0" mnemonicParsing="false" text="no" toggleGroup="$automunito" />
+                        <Label layoutX="20.0" layoutY="248.0" text="Automunito" textAlignment="CENTER">
+                           <font>
+                              <Font name="Gadugi Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="datePicker" layoutX="20.0" layoutY="149.0" prefHeight="20.0" prefWidth="160.0" />
+                        <Button layoutX="536.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#insertWorker" prefHeight="25.0" prefWidth="58.0" text="Inserisci" />
+                        <Button layoutX="355.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#insertEmergencyInfo" prefHeight="25.0" prefWidth="173.0" text="Inserisci contatti emergenza" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </AnchorPane>
