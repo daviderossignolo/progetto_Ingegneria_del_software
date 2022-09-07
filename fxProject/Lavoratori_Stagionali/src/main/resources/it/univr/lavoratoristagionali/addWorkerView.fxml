@@ -21,18 +21,47 @@
       <SplitPane dividerPositions="0.29797979797979796" layoutX="154.0" layoutY="76.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="207.0" style="-fx-background-color: #44c1c5;">
-               <children>
-                  <ImageView fitHeight="153.0" fitWidth="200.0" layoutX="51.0" layoutY="52.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="file:/D:/Lavoratori_Stagionali/src/main/java/it/univr/lavoratoristagionali/src/main/images/networking.png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="logoutBtn" layoutX="102.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#switchBackToLogin" text="Logout">
-                     <font>
-                        <Font name="Gadugi Bold" size="14.0" />
-                     </font>
-                  </Button>
-               </children>
+             <children>
+                <Button fx:id="pippoBaudo" layoutX="-5.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#switchBacktoHome" prefHeight="46.0" prefWidth="283.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0;" text="indietro" textAlignment="CENTER" textFill="#1b4e4f">
+                   <font>
+                      <Font name="Gadugi Bold" size="18.0" />
+                   </font>
+                   <graphic>
+                      <ImageView fitHeight="29.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                            <Image url="D:\Lavoratori_Stagionali\src\main\java\it\univr\lavoratoristagionali\src\main\images\add.png" />
+                         </image>
+                      </ImageView>
+                   </graphic></Button>
+                <Button layoutX="-2.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#openSearch" prefHeight="43.0" prefWidth="283.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0;" text="Cerca lavoratore" textAlignment="CENTER" textFill="#1b4e4f">
+                   <font>
+                      <Font name="Gadugi Bold" size="18.0" />
+                   </font>
+                   <graphic>
+                      <ImageView fitHeight="29.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                            <Image url="D:\Lavoratori_Stagionali\src\main\java\it\univr\lavoratoristagionali\src\main\images\search.png" />
+                         </image>
+                      </ImageView>
+                   </graphic></Button>
+                <ImageView fitHeight="137.0" fitWidth="125.0" layoutX="56.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="D:\Lavoratori_Stagionali\src\main\java\it\univr\lavoratoristagionali\src\main\images\networking.png" />
+                   </image>
+                </ImageView>
+                <Button layoutX="-2.0" layoutY="531.0" mnemonicParsing="false" onMouseClicked="#switchBackToLogin" prefHeight="43.0" prefWidth="283.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0;" text="Logout" textFill="#1b4e4f">
+                   <font>
+                      <Font name="Gadugi Bold" size="18.0" />
+                   </font>
+                   <graphic>
+                      <ImageView fitHeight="29.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                            <Image url="D:\Lavoratori_Stagionali\src\main\java\it\univr\lavoratoristagionali\src\main\images\logout.png" />
+                         </image>
+                      </ImageView>
+                   </graphic>
+                </Button>
+             </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="742.0" style="-fx-background-color: #1b4e4f;">
                <children>
@@ -131,11 +160,11 @@
                            </children>
                         </Pane>
                         <Separator layoutY="464.0" prefHeight="0.0" prefWidth="633.0" />
-                        <RadioButton layoutX="21.0" layoutY="274.0" mnemonicParsing="false" text="si">
+                        <RadioButton fx:id="autoMunitoSi" layoutX="21.0" layoutY="274.0" mnemonicParsing="false" text="si">
                            <toggleGroup>
                               <ToggleGroup fx:id="automunito" />
                            </toggleGroup></RadioButton>
-                        <RadioButton layoutX="60.0" layoutY="274.0" mnemonicParsing="false" text="no" toggleGroup="$automunito" />
+                        <RadioButton fx:id="autoMunitoNo" layoutX="60.0" layoutY="274.0" mnemonicParsing="false" text="no" toggleGroup="$automunito" />
                         <Label layoutX="20.0" layoutY="248.0" text="Automunito" textAlignment="CENTER">
                            <font>
                               <Font name="Gadugi Bold" size="14.0" />

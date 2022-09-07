@@ -1,4 +1,60 @@
 package it.univr.lavoratoristagionali;
 
+import javafx.application.Platform;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Pane;
+import javafx.stage.Popup;
+import javafx.stage.Stage;
+import javafx.stage.Window;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Timer;
+import java.util.TimerTask;
 public class searchViewController {
+    @FXML private Button search;
+    @FXML private TextField home;
+    @FXML private TextField name;
+    @FXML private TextField surname;
+    @FXML private TextField languages;
+    @FXML private RadioButton or;
+    @FXML private RadioButton and;
+    @FXML private Pane mainPane;
+    @FXML private AnchorPane anchorPane;
+    @FXML private GridPane gridPane;
+    @FXML private CheckBox amBox;
+    @FXML private CheckBox a1Box;
+    @FXML private CheckBox a2Box;
+    @FXML private CheckBox aBox;
+    @FXML private CheckBox c1Box;
+    @FXML private CheckBox cBox;
+    @FXML private CheckBox ceBox;
+    @FXML private CheckBox b1Box;
+    @FXML private CheckBox bBox;
+    @FXML private CheckBox beBox;
+    @FXML private CheckBox dBox;
+    @FXML private CheckBox d1Box;
+    @FXML private CheckBox deBox;
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
 }

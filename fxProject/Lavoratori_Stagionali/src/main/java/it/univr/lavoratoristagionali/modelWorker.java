@@ -1,5 +1,9 @@
 package it.univr.lavoratoristagionali;
 
+import com.opencsv.CSVWriter;
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Arrays;
 
 public class modelWorker {
@@ -13,6 +17,7 @@ public class modelWorker {
     private String email;
     private String lingueParlate;
     private boolean automunito;
+    private String licences;
 
     public modelWorker(){
         this.nome = null;
@@ -79,6 +84,10 @@ public class modelWorker {
         return automunito;
     }
 
+    public String getLicences() {
+        return licences;
+    }
+
     public void setAutomunito(boolean automunito) {
         this.automunito = automunito;
     }
@@ -119,6 +128,10 @@ public class modelWorker {
         this.telefono = telefono;
     }
 
+    public void setLicences(String licences) {
+        this.licences = licences;
+    }
+
     @Override
     public String toString() {
         return "modelWorker{" +
@@ -132,5 +145,27 @@ public class modelWorker {
                 ", email='" + email + '\'' +
                 ", lingueParlate=" + lingueParlate +
                 '}';
+    }
+
+    public void writeInFile(){
+        CSVWriter writer = null;
+
+        try {
+            //out = new PrintWriter("D:\\Lavoratori_Stagionali\\src\\main\\java\\it\\univr\\data\\workers.csv");
+            writer = new CSVWriter(new FileWriter("D:\\Lavoratori_Stagionali\\src\\main\\java\\it\\univr\\data\\workers.csv", true));
+            // stampa nel file
+            String automunito = isAutomunito() ? "si" : "no";
+            String res [] = {this.getNome(), this.getCognome(), this.getDataDiNascita(), this.getLuogoDiNascita(), this.getIndirizzo(),
+                    this.getTelefono(), this.getNazionalita(), this.getEmail(), this.getLingueParlate(), this.getLicences(), automunito};
+
+            //Writing data to the csv file
+            writer.writeNext(res);
+
+            //Flushing data from writer to file
+            writer.flush();
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

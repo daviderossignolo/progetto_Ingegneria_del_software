@@ -12,19 +12,19 @@
 
 <AnchorPane fx:id="loginview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.lavoratoristagionali.loginController">
    <children>
-      <Pane fx:id="mainPane" prefHeight="377.0" prefWidth="586.0" style="-fx-background-color: #A0AECD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="mainPane" prefHeight="377.0" prefWidth="586.0" style="-fx-background-color: #44c1c5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField fx:id="usrname" layoutX="348.0" layoutY="162.0" style="-fx-background-color: #E0EAFF;" />
-            <PasswordField fx:id="password" layoutX="348.0" layoutY="202.0" style="-fx-background-color: #E0EAFF;" />
-            <Label layoutX="267.0" layoutY="164.0" text="Username">
+            <TextField fx:id="usrname" layoutX="348.0" layoutY="162.0" style="-fx-background-color: #eaf4f5;" />
+            <PasswordField fx:id="password" layoutX="348.0" layoutY="202.0" style="-fx-background-color: #eaf4f5;" />
+            <Label alignment="CENTER" layoutX="264.0" layoutY="162.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-border-radius: 5; -fx-background-radius: 5;" text="Username" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="264.0" layoutY="202.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-radius: 5; -fx-border-radius: 5;" text="Password" textFill="#1b4e4f">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Label>
-            <Label layoutX="269.0" layoutY="204.0" text="Password">
-               <font>
-                  <Font name="System Bold" size="14.0" />
-               </font></Label>
-            <Button fx:id="submitBtn" alignment="CENTER" layoutX="321.0" layoutY="257.0" mnemonicParsing="false" onKeyPressed="#checkCredentials" onMouseClicked="#checkCredentialsMouse" style="-fx-background-color: #E0EAFF;" text="Login">
+            <Button fx:id="submitBtn" alignment="CENTER" layoutX="321.0" layoutY="257.0" mnemonicParsing="false" onKeyPressed="#checkCredentials" onMouseClicked="#checkCredentialsMouse" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0; -fx-background-radius: 5; -fx-border-radius: 5;" text="Login" textFill="#1b4e4f">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>

@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -46,8 +47,23 @@ public class loginController {
     private TextField errorMsg;
 
     @FXML
-    void checkCredentials(KeyEvent event) {
+    void checkCredentials(KeyEvent event) throws IOException {
+        if(event.getCode().equals(KeyCode.ENTER)) {
+            Parent root = FXMLLoader.load(getClass().getResource("home-view.fxml"));
+            if (controllo(usrname.getText(), password.getText())) {
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+            } else {
+                usrname.clear();
+                password.clear();
+                Alert a1 = new Alert(Alert.AlertType.NONE, "Le credenziali inserite sono errate o non esistono", ButtonType.OK);
 
+                // show the dialog
+                a1.showAndWait();
+            }
+        }
     }
 
     private Stage stage;
