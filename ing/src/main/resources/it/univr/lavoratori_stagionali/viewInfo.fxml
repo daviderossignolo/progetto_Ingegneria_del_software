@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="393.0" prefWidth="858.0" style="-fx-background-color: #1b4e4f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.lavoratori_stagionali.controllers.viewInfoController">
+   <children>
+      <TableView fx:id="infoTable" layoutX="18.0" layoutY="18.0" onMouseEntered="#updateData" prefHeight="312.0" prefWidth="823.0" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="16.799999999999955" AnchorPane.topAnchor="18.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Nome" />
+          <TableColumn fx:id="surname" prefWidth="75.0" text="Cognome" />
+            <TableColumn fx:id="birthday" prefWidth="97.0" text="Data di nascita" />
+            <TableColumn fx:id="birthplae" prefWidth="103.0" text="Luogo di nascita" />
+            <TableColumn fx:id="address" prefWidth="63.0" text="Indirizzo" />
+            <TableColumn fx:id="phone" prefWidth="67.0" text="Telefono" />
+            <TableColumn fx:id="nationality" prefWidth="74.0" text="Nazionalità" />
+            <TableColumn fx:id="email" prefWidth="61.0" text="email" />
+            <TableColumn fx:id="languages" prefWidth="90.0" text="Lingue" />
+            <TableColumn fx:id="licences" prefWidth="56.0" text="Patenti" />
+            <TableColumn fx:id="car" prefWidth="64.0" text="Macchina" />
+        </columns>
+      </TableView>
+      <Button layoutX="274.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#modify" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0; -fx-border-radius: 10; -fx-background-radius: 12;" text="Modifica voce" textFill="#1b4e4f">
+         <font>
+            <Font name="Gadugi Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteBtn" layoutX="438.0" layoutY="347.0" mnemonicParsing="false" onMouseClicked="#delete" prefHeight="27.0" prefWidth="153.0" style="-fx-background-color: #fcd029; -fx-border-color: #1b4e4f; -fx-background-insets: 0; -fx-border-radius: 10; -fx-background-radius: 12;" text="Elimina voce" textFill="#1b4e4f">
+         <font>
+            <Font name="Gadugi Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

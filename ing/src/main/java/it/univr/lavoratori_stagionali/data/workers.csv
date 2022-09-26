@@ -1,0 +1,13 @@
+Id,name,surname,birthday,birthplace,address,phone,nationality,email,languages,licences,car
+1,Pietro,Ferrari,2000-12-09,Verona,Via Selinunte 12,+393317761154,Italiana,pietro.ferrari@gmail.com,Italiano;Inglese,A3 B A1,si
+2,Carlo,Fattori,2001-03-14,Milano,Via Dante 13,+393476659943,Italiana,carlo.fattori@gmail.com,Italiano;Spagnolo,B,si
+3,Francesco,Albi,1998-04-22,Verona,Via Dandolo 11,+393467789976,Italiana,francesco.albi@gmail.com,Italiano,,no
+4,Karl,Struss,1987-06-21,Monaco,Via rossi 12/B,+393476654484,Tedesca,karl.struss@gmail.com,Tedesco;Italiano,B,si
+5,John,Wall,1990-01-24,Charlotte,Viale del commercio 3,+393317768891,Americana,john.wall@gmail.com,Inglese;Italiano,A1 B,si
+6,Lucia,Zorzi,1997-04-21,Verona,Via Maddalena 1,+393318876653,Italiana,lucia.zorzi@gmail.com,Italiano;Russo,B,no
+9,Carlo,Magno,1995-09-21,Roma,Viale Impero 12,+393316659981,Italiana,carlo.magno@gmail.com,Italiano,,no
+10,Lukas,Wagner,1994-09-02,Berlino,Via Roma 12,+393462293341,Tedesca,franz.wagner@gmail.com,Tedesco;Italiano,B ,si
+8,Federica,Agosti,2001-09-12,verona,via faliero 46,3479756888,Italiana,federica.agosti@gmail.com,Dialetto,B ,si
+11,Luciano,Pini,1997-09-19,Varese,Via Ciampi 3,+393317759901,Italiana,luciano.pini@gmail.com,Italiano,,no
+7,Rosa,Zoppi,1998-09-16,Parigi,Via tori 39,+393456756798,Francese,rosa.zoppi@gmail.com,Italiano;Inglese;Francese,B D1 CE,si
+13,Pietro,Ferrari,1999-09-24,Verona,Via Faliero 11,+393456673352,Italiana,mario.ferrari@gmail.it,Italiano;Inglese,B ,si

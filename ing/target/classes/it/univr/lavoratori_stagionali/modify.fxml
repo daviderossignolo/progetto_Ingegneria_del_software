@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="714.0" style="-fx-background-color: #1b4e4f;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univr.lavoratori_stagionali.controllers.modifyController">
+   <children>
+      <Pane layoutX="9.0" layoutY="10.0" onMouseEntered="#setFields" prefHeight="547.0" prefWidth="609.0" style="-fx-background-color: #eaf4f5;" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label layoutX="20.0" layoutY="64.0" prefHeight="20.0" prefWidth="45.0" text="Nome" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="languages" layoutX="382.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <TextField editable="false" layoutY="14.0" prefHeight="39.0" prefWidth="302.0" style="-fx-background-color: #eaf4f5;" text="Modifica Dati">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="name" layoutX="20.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <Label layoutX="201.0" layoutY="64.0" prefHeight="20.0" prefWidth="79.0" text="Cognome" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surname" layoutX="201.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <TextField fx:id="birthplace" layoutX="383.0" layoutY="87.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <TextField fx:id="address" layoutX="198.0" layoutY="149.0" prefHeight="20.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <TextField fx:id="phone" layoutX="383.0" layoutY="149.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <Label layoutX="20.0" layoutY="128.0" text="Data" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="383.0" layoutY="64.0" text="Luogo di nascita" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="198.0" layoutY="128.0" text="Indirizzo di residenza" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="383.0" layoutY="128.0" text="Telefono" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nationality" layoutX="20.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <Label layoutX="20.0" layoutY="185.0" text="Nazionalità" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="198.0" layoutY="211.0" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <Label layoutX="200.0" layoutY="185.0" text="E-mail" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="383.0" layoutY="185.0" text="Lingue parlate" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Pane layoutX="132.0" layoutY="243.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #1b4e4f;">
+               <children>
+                  <CheckBox fx:id="licenseA" layoutX="140.0" layoutY="43.0" mnemonicParsing="false" text="A">
+                     <padding>
+                        <Insets left="5.0" top="2.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="licenseAM" contentDisplay="CENTER" layoutX="10.0" layoutY="45.0" mnemonicParsing="false" text="AM" textAlignment="CENTER" />
+                  <CheckBox fx:id="licenseA1" layoutX="60.0" layoutY="45.0" mnemonicParsing="false" text="A1" />
+                  <TextField layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #eaf4f5;" text="Patenti">
+                     <font>
+                        <Font name="Gadugi Bold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <CheckBox fx:id="licenseA2" layoutX="100.0" layoutY="45.0" mnemonicParsing="false" text="A2" />
+                  <CheckBox fx:id="licenseB1" contentDisplay="CENTER" layoutX="10.0" layoutY="72.0" mnemonicParsing="false" text="B1" textAlignment="CENTER" />
+                  <CheckBox fx:id="licenseB" layoutX="60.0" layoutY="72.0" mnemonicParsing="false" text="B" />
+                  <CheckBox fx:id="licenseC1" layoutX="9.0" layoutY="100.0" mnemonicParsing="false" text="C1" />
+                  <CheckBox fx:id="licenseC" layoutX="55.0" layoutY="98.0" mnemonicParsing="false" text="C">
+                     <padding>
+                        <Insets left="5.0" top="2.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="licenseD1" layoutX="9.0" layoutY="126.0" mnemonicParsing="false" text="D1" />
+                  <CheckBox fx:id="licenseD" layoutX="55.0" layoutY="125.0" mnemonicParsing="false" text="D">
+                     <padding>
+                        <Insets left="5.0" top="2.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="licenseBE" layoutX="9.0" layoutY="155.0" mnemonicParsing="false" text="BE" />
+                  <CheckBox fx:id="licenseCE" layoutX="60.0" layoutY="155.0" mnemonicParsing="false" text="CE" />
+                  <CheckBox fx:id="licenseDE" layoutX="100.0" layoutY="155.0" mnemonicParsing="false" text="DE" />
+               </children>
+            </Pane>
+            <Separator layoutY="464.0" prefHeight="5.0" prefWidth="609.0" />
+            <RadioButton fx:id="car" layoutX="21.0" layoutY="273.0" mnemonicParsing="false" text="si">
+               <toggleGroup>
+                  <ToggleGroup fx:id="automunito" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="noCar" layoutX="60.0" layoutY="273.0" mnemonicParsing="false" text="no" toggleGroup="$automunito" />
+            <Label layoutX="20.0" layoutY="247.0" text="Automunito" textAlignment="CENTER" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="birthday" layoutX="20.0" layoutY="149.0" prefHeight="20.0" prefWidth="160.0" style="-fx-background-color: #ffffff; -fx-border-color: #1b4e4f; -fx-opacity: 100;" />
+            <Button fx:id="saveAndClose" layoutX="536.0" layoutY="488.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="25.0" prefWidth="58.0" style="-fx-border-color: #1b4e4f; -fx-background-color: #fcd029; -fx-background-insets: 0;" text="Salva" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="392.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#insertEmergencyInfo" prefHeight="27.0" prefWidth="179.0" style="-fx-border-color: #1b4e4f; -fx-background-color: #fcd029; -fx-background-insets: 0;" text="Modifica Contatti" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#openEsperienze" prefHeight="27.0" prefWidth="179.0" style="-fx-border-color: #1b4e4f; -fx-background-color: #fcd029; -fx-background-insets: 0;" text="Modifica Esperienze" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#openAvailabilities" prefHeight="27.0" prefWidth="179.0" style="-fx-border-color: #1b4e4f; -fx-background-color: #fcd029; -fx-background-insets: 0;" text="Modifica Disponibilità" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="383.0" layoutY="257.0" prefHeight="20.0" prefWidth="40.0" text="Altro" textFill="#1b4e4f">
+               <font>
+                  <Font name="Gadugi Bold" size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="377.0" layoutY="283.0" prefHeight="3.0" prefWidth="206.0" style="-fx-background-color: #1b4e4f; -fx-border-color: #1b4e4f;" />
+            <Label fx:id="error1" layoutX="60.0" layoutY="60.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error2" layoutX="263.0" layoutY="60.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error3" layoutX="491.0" layoutY="60.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error4" layoutX="51.0" layoutY="125.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error5" layoutX="336.0" layoutY="124.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error6" layoutX="441.0" layoutY="123.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error7" layoutX="95.0" layoutY="181.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error8" layoutX="241.0" layoutY="178.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error9" layoutX="477.0" layoutY="181.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="error10" layoutX="100.0" layoutY="243.0" text="*" textFill="RED" visible="false">
+               <font>
+                  <Font name="Gadugi Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
